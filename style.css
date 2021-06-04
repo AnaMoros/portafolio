@@ -1,0 +1,52 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  font-size: 1rem;
+  --dark1: #1b2938;
+  --dark2: #203242;
+  --dark3: #253b4c;
+  --light1: #dbdcdd;
+  --light2: #e8e8e8;
+  --light3: #e8e8e8;
+  --accent1: #592347;
+  --accent2: #592347;
+  --accent3: #632852;
+  --blue1: #607783;
+  --blue2: #748f99;
+  --blue3: #748f99;
+  --grey1: #9c9098;
+  --grey2: #b2a8af;
+  --grey3: #b1a8ae;
+}
+
+nav {
+  position: fixed;
+  width: 100%;
+  height: auto;
+  top: 0;
+  left: 0;
+  background-color: var(--dark3);
+  color: var(--light3);
+}
+nav ul {
+  display: flex;
+  justify-content: flex-end;
+}
+nav li {
+  list-style: none;
+  padding-left: 0;
+  color: inherit;
+  margin-right: 1em;
+}
+nav a {
+  color: inherit;
+  text-decoration: none;
+}
+.welcome {
+  height: 100vh;
+  background-color: var(--light3);
+  text-align: center;
+}
+
+/* User Story #9: My portfolio should have at least one media query. */
