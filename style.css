@@ -49,4 +49,19 @@ nav a {
   text-align: center;
 }
 
+/* ===========
+footer
+=========== */
+footer {
+  height: 50vh;
+  background-color: var(--dark1);
+  overflow: hidden;
+}
+.semi-circle {
+  background-color: var(--light1);
+  height: inherit;
+  width: 100%;
+  border-radius: 50% 50% 0 0;
+  transform: translateY(50%);
+}
 /* User Story #9: My portfolio should have at least one media query. */
