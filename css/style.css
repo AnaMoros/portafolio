@@ -15,6 +15,7 @@
   --grey2: #b2a8af;
   --grey3: #b1a8ae;
   --fn-nav-s: 1rem;
+  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 * {
   box-sizing: border-box;
@@ -46,39 +47,31 @@ img {
   text-align: center;
 }
 
-.btn-menu {
+.btn-mobile {
   margin-right: 1em;
-  border: 1px solid var(--dark3);
+  border: none;
   border-radius: 4px;
   padding: 1em;
   background-color: inherit;
 }
-.btn-menu:hover .icon-menu,
-.btn-menu:hover,
-.btn-menu:focus .icon-menu,
-.btn-menu:focus {
+.bg-dark:hover,
+.bg-dark:focus,
+.bg-accent:hover,
+.bg-accent:focus {
   background-color: var(--light3);
+}
+.bg-dark:hover .icon-mobile,
+.bg-dark:focus .icon-mobile {
   fill: var(--dark3);
+}
+.bg-accent:hover .icon-mobile,
+.bg-accent:focus .icon-mobile {
+  fill: var(--accent3);
 }
 
 .btn-close {
-  margin: 1em 2em 0 auto;
-  padding: 0.5em;
-  border: 1px solid var(--accent3);
-  border-radius: 50%;
-  background-color: inherit;
+  margin: 1em auto 0.5em 2em;
 }
-.btn-close:hover .icon-close,
-.btn-close:hover,
-.btn-close:focus .icon-close,
-.btn-close:focus {
-  background-color: var(--light3);
-  fill: var(--accent3);
-}
-/* .icon-close:hover,
-.icon-close:focus {
-} */
-
 /* ===========
   Layout
 ===========*/
@@ -95,18 +88,6 @@ img {
 /* ===========
   Navbar
 ===========*/
-/* nav {
-  position: fixed;
-  width: 100%;
-  height: var(--nav-height);
-  top: 0;
-  left: 0;
-  background-color: var(--dark3);
-  color: var(--light3);
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-} */
 nav {
   position: fixed;
   width: 100%;
@@ -127,12 +108,12 @@ nav {
   height: 4rem;
 }
 
-.icon-menu {
+.icon-mobile {
   width: 2rem;
   height: 2rem;
 }
 .sidenav {
-  visibility: hidden;
+  display: none;
   height: 100vh;
   width: 50vw;
   min-width: 150px;
@@ -143,11 +124,7 @@ nav {
   right: 0;
   z-index: 1;
   overflow-x: hidden;
-  transition: 250ms;
-}
-.icon-close {
-  width: 2rem;
-  height: 2rem;
+  transition: 250s;
 }
 .sidenav ul {
   margin: 0;
@@ -159,6 +136,7 @@ nav {
   margin-bottom: 1.5em;
   margin-right: 1em;
 }
+
 .sidenav a {
   font-size: var(--fn-nav-s);
   color: inherit;
@@ -169,15 +147,14 @@ nav {
   height: var(--fn-nav-s);
   margin-right: 0.4em;
 }
+
 @media (min-width: 600px) {
-  .btn-menu {
+  .btn-mobile {
     display: none;
   }
-  .btn-close {
-    display: none;
-  }
+
   .sidenav {
-    visibility: visible;
+    display: unset;
     height: unset;
     width: unset;
     min-width: unset;
@@ -232,4 +209,33 @@ nav {
   border-radius: 50% 50% 0 0;
   transform: translateY(50%);
 } */
-/* User Story #9: My portfolio should have at least one media query. */
+/* Underline From Left */
+.hvr-underline-from-left {
+  vertical-align: middle;
+  -webkit-transform: perspective(1px) translateZ(0);
+  transform: perspective(1px) translateZ(0);
+  box-shadow: 0 0 1px rgba(0, 0, 0, 0);
+  position: relative;
+  overflow: hidden;
+}
+.hvr-underline-from-left:before {
+  content: "";
+  position: absolute;
+  z-index: -1;
+  left: 0;
+  right: 100%;
+  bottom: 0;
+  background: var(--light3);
+  height: 4px;
+  -webkit-transition-property: right;
+  transition-property: right;
+  -webkit-transition-duration: 0.3s;
+  transition-duration: 0.3s;
+  -webkit-transition-timing-function: ease-out;
+  transition-timing-function: ease-out;
+}
+.hvr-underline-from-left:hover:before,
+.hvr-underline-from-left:focus:before,
+.hvr-underline-from-left:active:before {
+  right: 0;
+}
