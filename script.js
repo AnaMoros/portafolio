@@ -2,24 +2,25 @@
 const smallNavBar = window.matchMedia("(min-width: 600px)");
 const openMenuBtn = document.getElementById("open-menu");
 const closeMenuBtn = document.getElementById("close-menu");
-
+const sideNav = document.getElementById("sidenav");
 smallNavBar.addEventListener("change", handleDeviceChange);
 
 function handleDeviceChange(e) {
   if (e.matches) {
-    console.log("bigger than 600px");
-    document.getElementById("sidenav").style.display = "unset";
+    sideNav.classList.add("big-visibility");
+    sideNav.classList.remove("ani-open-from-left");
   } else {
-    console.log("smaller than 600px");
-    document.getElementById("sidenav").style.display = "none";
+    sideNav.classList.add("no-ani");
+    sideNav.classList.remove("big-visibility");
   }
 }
 openMenuBtn.addEventListener("click", () => {
-  document.getElementById("sidenav").style.display = "block";
+  sideNav.classList.remove("no-ani");
+  sideNav.classList.add("ani-open-from-left");
 });
 
 closeMenuBtn.addEventListener("click", () => {
-  document.getElementById("sidenav").style.display = "none";
+  sideNav.classList.remove("ani-open-from-left");
 });
 
 //run initial size check

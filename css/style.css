@@ -20,6 +20,7 @@
 * {
   box-sizing: border-box;
 }
+
 html,
 body {
   margin: 0;
@@ -33,7 +34,12 @@ img {
   max-width: 100%;
   display: block;
 }
-
+.no-ani {
+  -webkit-transition: none !important;
+  -moz-transition: none !important;
+  -o-transition: none !important;
+  transition: none !important;
+}
 /* ===========
   Typography
 ===========*/
@@ -113,20 +119,26 @@ nav {
   height: 2rem;
 }
 .sidenav {
-  display: none;
+  visibility: hidden;
   height: 100vh;
-  width: 50vw;
+  width: 50vh;
   min-width: 150px;
   max-width: 300px;
   background-color: var(--accent3);
   position: fixed;
   top: 0;
   right: 0;
-  z-index: 1;
+  z-index: 2;
   overflow-x: hidden;
-  transition: 250s;
+  transition: visibility 1.5s, transform 1.5s;
+  transform: translateX(300px);
 }
-.sidenav ul {
+.ani-open-from-left {
+  visibility: visible;
+  transform: translateX(0);
+}
+
+.ani-open-from-left:not() .sidenav ul {
   margin: 0;
   padding: 0;
   margin-left: 2em;
@@ -154,7 +166,6 @@ nav {
   }
 
   .sidenav {
-    display: unset;
     height: unset;
     width: unset;
     min-width: unset;
@@ -166,6 +177,11 @@ nav {
     z-index: unset;
     overflow-x: unset;
     transition: unset;
+    transform: unset;
+  }
+  .big-visibility {
+    visibility: visible;
+    transition: 0, 0;
   }
   .sidenav ul {
     display: flex;
