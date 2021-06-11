@@ -14,7 +14,6 @@
   --grey1: #9c9098;
   --grey2: #b2a8af;
   --grey3: #b1a8ae;
-  --nav-height-sm: 4rem;
   --fn-nav-s: 1rem;
 }
 * {
@@ -39,13 +38,63 @@ img {
 ===========*/
 
 /* ===========
+  Buttons
+===========*/
+.btn {
+  display: block;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-menu {
+  margin-right: 1em;
+  border: 1px solid var(--dark3);
+  border-radius: 4px;
+  padding: 1em;
+  background-color: inherit;
+}
+.btn-menu:hover .icon-menu,
+.btn-menu:hover,
+.btn-menu:focus .icon-menu,
+.btn-menu:focus {
+  background-color: var(--light3);
+  fill: var(--dark3);
+}
+
+.btn-close {
+  margin: 1em 2em 0 auto;
+  padding: 0.5em;
+  border: 1px solid var(--accent3);
+  border-radius: 50%;
+  background-color: inherit;
+}
+.btn-close:hover .icon-close,
+.btn-close:hover,
+.btn-close:focus .icon-close,
+.btn-close:focus {
+  background-color: var(--light3);
+  fill: var(--accent3);
+}
+/* .icon-close:hover,
+.icon-close:focus {
+} */
+
+/* ===========
   Layout
 ===========*/
-
+.icon {
+  display: block;
+  fill: var(--light3);
+}
+.block {
+  display: block;
+}
+.inline {
+  display: inline-block;
+}
 /* ===========
   Navbar
 ===========*/
-
 /* nav {
   position: fixed;
   width: 100%;
@@ -58,7 +107,6 @@ img {
   justify-content: space-between;
   align-items: center;
 } */
-
 nav {
   position: fixed;
   width: 100%;
@@ -70,45 +118,25 @@ nav {
   justify-content: space-between;
   align-items: center;
 }
-
+.logo-wrapper {
+  margin-left: 1em;
+  padding: 0.3rem 0;
+}
 .logo {
-  width: 3rem;
-  fill: var(--light3);
-}
-.btn {
-  border: none;
-  cursor: pointer;
-  text-align: center;
+  width: 4rem;
+  height: 4rem;
 }
 
-.btn-menu {
-  background-color: inherit;
-  padding: 1.3em;
-}
-.btn-close {
-  background-color: inherit;
-}
-.icon {
-  fill: var(--light3);
-}
 .icon-menu {
   width: 2rem;
   height: 2rem;
 }
-.icon-close {
-  width: 2rem;
-  height: 2rem;
-}
-.icon-nav {
-  width: var(--fn-nav-s);
-  height: var(--fn-nav-s);
-}
-
 .sidenav {
   visibility: hidden;
   height: 100vh;
   width: 50vw;
   min-width: 150px;
+  max-width: 300px;
   background-color: var(--accent3);
   position: fixed;
   top: 0;
@@ -117,20 +145,58 @@ nav {
   overflow-x: hidden;
   transition: 250ms;
 }
-.sidenav ul {
-  margin-top: 3rem;
+.icon-close {
+  width: 2rem;
+  height: 2rem;
 }
-
+.sidenav ul {
+  margin: 0;
+  padding: 0;
+  margin-left: 2em;
+}
 .sidenav li {
   list-style: none;
-  padding-left: 0;
-  padding-bottom: 1.5em;
+  margin-bottom: 1.5em;
   margin-right: 1em;
 }
 .sidenav a {
   font-size: var(--fn-nav-s);
-  color: var(--light3);
+  color: inherit;
   text-decoration: none;
+}
+.icon-nav {
+  width: var(--fn-nav-s);
+  height: var(--fn-nav-s);
+  margin-right: 0.4em;
+}
+@media (min-width: 600px) {
+  .btn-menu {
+    display: none;
+  }
+  .btn-close {
+    display: none;
+  }
+  .sidenav {
+    visibility: visible;
+    height: unset;
+    width: unset;
+    min-width: unset;
+    max-width: unset;
+    background-color: inherit;
+    position: unset;
+    top: unset;
+    right: unset;
+    z-index: unset;
+    overflow-x: unset;
+    transition: unset;
+  }
+  .sidenav ul {
+    display: flex;
+  }
+  .sidenav li {
+    margin-right: 2.3em;
+    margin-bottom: 0;
+  }
 }
 
 /* ===========
@@ -146,7 +212,7 @@ nav {
 }
 
 .welcome {
-  margin-top: var(--nav-height-sm);
+  margin-top: 4.6rem;
   height: 100vh;
   background-color: var(--light3);
 }
