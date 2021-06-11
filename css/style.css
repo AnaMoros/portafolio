@@ -15,7 +15,7 @@
   --grey2: #b2a8af;
   --grey3: #b1a8ae;
   --fn-nav-s: 1rem;
-  --transition: all 0.25s cubic-bezier(0.645, 0.045, 0.355, 1);
+  --transition: cubic-bezier(0.645, 0.045, 0.355, 1);
 }
 * {
   box-sizing: border-box;
@@ -130,15 +130,30 @@ nav {
   right: 0;
   z-index: 2;
   overflow-x: hidden;
-  transition: visibility 1.5s, transform 1.5s;
+  transition: visibility 1s, transform 1s var(--transition);
   transform: translateX(300px);
 }
 .ani-open-from-left {
   visibility: visible;
   transform: translateX(0);
 }
-
-.ani-open-from-left:not() .sidenav ul {
+.overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background: rgba(0, 0, 0, 0.5);
+  backdrop-filter: blur(2px);
+  visibility: hidden;
+  opacity: 0;
+  transition: opacity 0.3s ease;
+}
+.overlay-open {
+  visibility: visible;
+  opacity: 1;
+}
+.sidenav ul {
   margin: 0;
   padding: 0;
   margin-left: 2em;
