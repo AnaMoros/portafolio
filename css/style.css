@@ -15,6 +15,7 @@
   --grey2: #b2a8af;
   --grey3: #b1a8ae;
   --nav-height-sm: 4rem;
+  --fn-nav-s: 1rem;
 }
 * {
   box-sizing: border-box;
@@ -61,7 +62,6 @@ img {
 nav {
   position: fixed;
   width: 100%;
-  height: var(--nav-height-sm);
   top: 0;
   left: 0;
   background-color: var(--dark3);
@@ -71,18 +71,44 @@ nav {
   align-items: center;
 }
 
-svg {
-  width: 4em;
+.logo {
+  width: 3rem;
   fill: var(--light3);
 }
-.icons-burger {
-  font-size: 3rem;
-  margin-right: 0.5em;
+.btn {
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+
+.btn-menu {
+  background-color: inherit;
+  padding: 1.3em;
+}
+.btn-close {
+  background-color: inherit;
+}
+.icon {
+  fill: var(--light3);
+}
+.icon-menu {
+  width: 2rem;
+  height: 2rem;
+}
+.icon-close {
+  width: 2rem;
+  height: 2rem;
+}
+.icon-nav {
+  width: var(--fn-nav-s);
+  height: var(--fn-nav-s);
 }
 
 .sidenav {
+  visibility: hidden;
   height: 100vh;
-  width: 50%;
+  width: 50vw;
+  min-width: 150px;
   background-color: var(--accent3);
   position: fixed;
   top: 0;
@@ -99,11 +125,11 @@ svg {
   list-style: none;
   padding-left: 0;
   padding-bottom: 1.5em;
-  color: var(--light3);
   margin-right: 1em;
 }
 .sidenav a {
-  color: inherit;
+  font-size: var(--fn-nav-s);
+  color: var(--light3);
   text-decoration: none;
 }
 
