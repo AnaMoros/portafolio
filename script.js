@@ -1,11 +1,10 @@
 // open and close the side navigation when resizing the device
-const smallNavBar = window.matchMedia("(min-width: 600px)");
+const smallNavBar = window.matchMedia("(min-width: 720px)");
 const openMenuBtn = document.getElementById("open-menu");
 const closeMenuBtn = document.getElementById("close-menu");
 const sideNav = document.getElementById("sidenav");
 const overlay = document.getElementById("overlay");
 const navLinks = document.getElementsByClassName("nav-links");
-console.log(navLinks);
 smallNavBar.addEventListener("change", handleDeviceChange);
 
 function handleDeviceChange(e) {

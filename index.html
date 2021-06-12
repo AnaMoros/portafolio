@@ -7,20 +7,20 @@
     <title>Document</title>
     <link rel="preconnect" href="https://fonts.gstatic.com" />
     <link
-      href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;400;700&family=Shadows+Into+Light&family=Shadows+Into+Light+Two&display=swap"
+      href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body class="preload">
-    <nav class="topnav" id="navbar" role="navigation">
+    <nav id="navbar" role="navigation">
       <div class="logo-wrapper">
         <svg class="logo icon block" aria-labelledby="Logo">
           <title id="logo" lang="en">Logo</title>
           <use xlink:href="/css/all.svg#logo" />
         </svg>
       </div>
-      <div class="sidenav" id="sidenav">
+      <div class="main-nav sidenav" id="sidenav">
         <button class="btn btn-mobile btn-close bg-accent" id="close-menu">
           <svg class="icon icon-mobile block" aria-labelledby="close">
             <title id="close" lang="en">Close</title>
@@ -78,170 +78,180 @@
 
     <main>
       <section class="welcome" id="welcome-section">
-        <h1>
-          hi, <br />
-          I'm Ana, <br />
-          a web developer.
-        </h1>
-        <p>
-          Former English language teacher, part-time adventurer, now a UK based
-          <strong>frontend developer</strong>.
-        </p>
-        <p>
-          Currently, I'm working through
-          <a
-            href="https://scrimba.com/learn/frontend"
-            target="_blank"
-            rel="noopener noreferrer"
-            >the Frontend Developer Career Path</a
-          >
-          at Scrimba and
-          <a
-            href="https://www.theodinproject.com/paths/full-stack-javascript"
-            target="_blank"
-            rel="noopener noreferrer"
-            >The Full Stack JavaScript Path</a
-          >
-          with the Odin Project.
-        </p>
-        <a href="#projects">See my projects</a>
+        <div class="container">
+          <div class="nav-height"></div>
+          <h1>Hi, I'm Ana</h1>
+          <h2>A <span class="big-accent">frontend developer</span>.</h2>
+          <p>
+            Former English language teacher, part-time adventurer, now a UK
+            based
+            <strong>frontend developer</strong>. Currently, I'm working through
+            <a
+              class="accent-links"
+              href="https://scrimba.com/learn/frontend"
+              target="_blank"
+              rel="noopener noreferrer"
+              >the Frontend Developer Career Path</a
+            >
+            at Scrimba and
+            <a
+              class="accent-links"
+              href="https://www.theodinproject.com/paths/full-stack-javascript"
+              target="_blank"
+              rel="noopener noreferrer"
+              >The Full Stack JavaScript Path</a
+            >
+            with the Odin Project.
+          </p>
+          <a class="btn btn-primary" href="#projects">See my projects</a>
+        </div>
+        <!-- close cointainer -->
       </section>
       <section class="projects" id="projects">
-        <div class="project-tile">
-          <h2>Projects</h2>
-          <p
-            class="codepen"
-            data-height="265"
-            data-theme-id="dark"
-            data-default-tab="result"
-            data-user="anamoros"
-            data-slug-hash="GRWmmKO"
-            data-preview="true"
-            style="
-              height: 265px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-            data-pen-title="GRWmmKO"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/anamoros/pen/GRWmmKO"> GRWmmKO</a> by
-              Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-              <a href="https://codepen.io">CodePen</a>.</span
+        <div class="container">
+          <div class="project-tile">
+            <h2>Projects</h2>
+            <p
+              class="codepen"
+              data-height="265"
+              data-theme-id="dark"
+              data-default-tab="result"
+              data-user="anamoros"
+              data-slug-hash="GRWmmKO"
+              data-preview="true"
+              style="
+                height: 265px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
+              data-pen-title="GRWmmKO"
             >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-            neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-            vitae hic minus, reprehenderit, alias architecto minima sunt quia
-            excepturi impedit et distinctio?
-          </p>
-        </div>
-        <div class="project-tile">
-          <p
-            class="codepen"
-            data-height="265"
-            data-theme-id="dark"
-            data-default-tab="result"
-            data-user="anamoros"
-            data-slug-hash="VwppoqP"
-            data-preview="true"
-            style="
-              height: 265px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-            data-pen-title="VwppoqP"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/anamoros/pen/VwppoqP"> VwppoqP</a> by
-              Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-              <a href="https://codepen.io">CodePen</a>.</span
+              <span
+                >See the Pen
+                <a href="https://codepen.io/anamoros/pen/GRWmmKO"> GRWmmKO</a>
+                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
+                <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
+              vitae hic minus, reprehenderit, alias architecto minima sunt quia
+              excepturi impedit et distinctio?
+            </p>
+          </div>
+          <!-- close project tile -->
+          <div class="project-tile">
+            <p
+              class="codepen"
+              data-height="265"
+              data-theme-id="dark"
+              data-default-tab="result"
+              data-user="anamoros"
+              data-slug-hash="VwppoqP"
+              data-preview="true"
+              style="
+                height: 265px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
+              data-pen-title="VwppoqP"
             >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-            neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-            vitae hic minus, reprehenderit, alias architecto minima sunt quia
-            excepturi impedit et distinctio?
-          </p>
-        </div>
-        <div class="project-tile">
-          <p
-            class="codepen"
-            data-height="265"
-            data-theme-id="dark"
-            data-default-tab="result"
-            data-user="anamoros"
-            data-slug-hash="abJwbXj"
-            data-preview="true"
-            style="
-              height: 265px;
-              box-sizing: border-box;
-              display: flex;
-              align-items: center;
-              justify-content: center;
-              border: 2px solid;
-              margin: 1em 0;
-              padding: 1em;
-            "
-            data-pen-title="abJwbXj"
-          >
-            <span
-              >See the Pen
-              <a href="https://codepen.io/anamoros/pen/abJwbXj"> abJwbXj</a> by
-              Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-              <a href="https://codepen.io">CodePen</a>.</span
+              <span
+                >See the Pen
+                <a href="https://codepen.io/anamoros/pen/VwppoqP"> VwppoqP</a>
+                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
+                <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
+              vitae hic minus, reprehenderit, alias architecto minima sunt quia
+              excepturi impedit et distinctio?
+            </p>
+          </div>
+          <!-- close project tile -->
+          <div class="project-tile">
+            <p
+              class="codepen"
+              data-height="265"
+              data-theme-id="dark"
+              data-default-tab="result"
+              data-user="anamoros"
+              data-slug-hash="abJwbXj"
+              data-preview="true"
+              style="
+                height: 265px;
+                box-sizing: border-box;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                border: 2px solid;
+                margin: 1em 0;
+                padding: 1em;
+              "
+              data-pen-title="abJwbXj"
             >
-          </p>
-          <script
-            async
-            src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-          ></script>
-          <h3>Project Title</h3>
-          <p>
-            Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-            neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-            vitae hic minus, reprehenderit, alias architecto minima sunt quia
-            excepturi impedit et distinctio?
-          </p>
+              <span
+                >See the Pen
+                <a href="https://codepen.io/anamoros/pen/abJwbXj"> abJwbXj</a>
+                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
+                <a href="https://codepen.io">CodePen</a>.</span
+              >
+            </p>
+            <script
+              async
+              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
+            ></script>
+            <h3>Project Title</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
+              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
+              vitae hic minus, reprehenderit, alias architecto minima sunt quia
+              excepturi impedit et distinctio?
+            </p>
+          </div>
+          <!-- close project tile -->
         </div>
+        <!-- close cointainer -->
       </section>
     </main>
     <footer>
-      <p>
-        Icons made
-        <a href="https://www.freepik.com" title="Freepik">Freepik</a> and<a
-          href="https://www.flaticon.com/authors/pixel-perfect"
-          title="Pixel perfect"
-          >Pixel perfect</a
-        >
-        from<a href="https://www.flaticon.com/" title="Flaticon"
-          >www.flaticon.com</a
-        >
-      </p>
+      <div class="container">
+        <p>
+          Icons made
+          <a href="https://www.freepik.com" title="Freepik">Freepik</a> and<a
+            href="https://www.flaticon.com/authors/pixel-perfect"
+            title="Pixel perfect"
+            >Pixel perfect</a
+          >
+          from<a href="https://www.flaticon.com/" title="Flaticon"
+            >www.flaticon.com</a
+          >
+        </p>
+      </div>
+      <!-- close cointainer -->
     </footer>
     <script src="script.js"></script>
   </body>
