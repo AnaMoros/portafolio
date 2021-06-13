@@ -34,3 +34,10 @@ function closeNav() {
 
 //run initial size check
 handleDeviceChange(smallNavBar);
+
+// Wrap every letter in a span
+const textWrapper = document.querySelector(".hero-animation");
+textWrapper.innerHTML = textWrapper.textContent.replace(
+  /\S/g,
+  "<span class='letter'>$&</span>"
+);
