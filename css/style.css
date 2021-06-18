@@ -66,6 +66,7 @@ img {
 
 h1 {
   margin: 0;
+  margin-top: calc(var(--fn-nav-s) * 6);
   font-size: clamp(24px, 4vw, 48px);
   font-family: var(--font-accent);
 }
@@ -193,11 +194,11 @@ nav {
   z-index: 2;
 }
 .logo-wrapper {
-  margin-left: 1em;
+  margin: 0.5em 0 0.5em 1em;
 }
 .logo {
-  width: calc(var(--fn-nav-s) * 7);
-  height: calc(var(--fn-nav-s) * 7);
+  width: calc(var(--fn-nav-s) * 4);
+  height: calc(var(--fn-nav-s) * 4);
 }
 
 nav button .icon {
@@ -207,9 +208,7 @@ nav button .icon {
 .sidenav {
   visibility: hidden;
   height: 100vh;
-  width: 50vh;
-  min-width: 150px;
-  max-width: 300px;
+  width: clamp(150px 50vh 300px);
   background-color: var(--accent3);
   position: fixed;
   top: 0;
@@ -240,7 +239,7 @@ nav button .icon {
   backdrop-filter: blur(2px);
   z-index: 2;
 }
-.sidenav ul {
+.links-wrapper {
   margin: 0;
   padding: 0;
   margin-left: 2em;
@@ -272,27 +271,14 @@ nav button .icon {
     display: none;
   }
 
-  .sidenav {
-    height: unset;
-    width: unset;
-    min-width: unset;
-    max-width: unset;
-    background-color: inherit;
-    position: unset;
-    top: unset;
-    right: unset;
-    z-index: unset;
-    overflow-x: unset;
-    transition: unset;
-    transform: unset;
-  }
-  .big-visibility {
+  .visible {
     visibility: visible;
   }
   button.hvr-setup {
     display: none;
   }
-  .sidenav ul {
+
+  .links-wrapper {
     display: flex;
   }
   .nav-links {
