@@ -1,6 +1,6 @@
 "use strict";
 // open and close the side navigation when resizing the device
-const navMinWidth = window.matchMedia("(min-width: 720px)");
+const navMinWidth = window.matchMedia("(min-width: 775px)");
 const openMenuBtn = document.getElementById("open-menu");
 const closeMenuBtn = document.getElementById("close-menu");
 const mainNav = document.getElementById("main-nav");

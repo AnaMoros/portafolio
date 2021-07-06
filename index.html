@@ -15,8 +15,8 @@
   <body>
     <nav id="navbar" role="navigation">
       <div class="logo-wrapper">
-        <svg class="logo icon block" aria-labelledby="Logo">
-          <title id="logo" lang="en">Logo</title>
+        <svg class="logo icon" aria-labelledby="logo-title">
+          <title id="logo-title" lang="en">Logo</title>
           <use xlink:href="/css/all.svg#logo" />
         </svg>
       </div>
@@ -25,8 +25,8 @@
           class="btn btn-mobile bg-accent hvr-setup to-right"
           id="close-menu"
         >
-          <svg class="icon block" aria-labelledby="close">
-            <title id="close" lang="en">Close</title>
+          <svg class="icon" aria-labelledby="close-menu-title">
+            <title id="close-menu-titke" lang="en">Close menu</title>
             <use xlink:href="/css/all.svg#right-arrow-angle" />
           </svg>
         </button>
@@ -37,14 +37,15 @@
           <li class="nav-links hvr-underline-from-left">
             <a href="#projects">Projects</a>
           </li>
-          <li class="nav-links hvr-underline-from-left"><a href="#">CV</a></li>
+          <li class="nav-links hvr-underline-from-left">
+            <a href="#">CV</a>
+          </li>
           <li class="nav-links hvr-underline-from-left">
             <a
               href="https://github.com/AnaMoros"
               id="profile-link"
               target="_blank"
-              ><svg class="icon icon-nav inline" aria-labelledby="title">
-                <title id="title" lang="en">Menu</title>
+              ><svg class="icon icon-nav">
                 <use xlink:href="/css/all.svg#github" />
               </svg>
               Github</a
@@ -52,8 +53,7 @@
           </li>
           <li class="nav-links hvr-underline-from-left">
             <a href="https://twitter.com/mm_AnaMoros" target="_blank"
-              ><svg class="icon icon-nav inline" aria-labelledby="title">
-                <title id="title" lang="en">Menu</title>
+              ><svg class="icon icon-nav">
                 <use xlink:href="/css/all.svg#twitter" />
               </svg>
               Twitter</a
@@ -61,8 +61,7 @@
           </li>
           <li class="nav-links hvr-underline-from-left">
             <a href="https://www.linkedin.com/in/anamoros/" target="_blank"
-              ><svg class="icon icon-nav inline" aria-labelledby="title">
-                <title id="title" lang="en">Menu</title>
+              ><svg class="icon icon-nav">
                 <use xlink:href="/css/all.svg#linkedin" />
               </svg>
               LinkedIn</a
@@ -76,8 +75,8 @@
         id="open-menu"
         tabindex="0"
       >
-        <svg class="icon block" aria-labelledby="title">
-          <title id="title" lang="en">Menu</title>
+        <svg class="icon" aria-labelledby="open-menu-title">
+          <title id="open-menu-title" lang="en">Open menu</title>
           <use xlink:href="/css/all.svg#left-arrow-line-symbol" />
         </svg>
       </button>
@@ -94,7 +93,7 @@
             <strong>frontend developer</strong>. Currently, I'm working through
             <strong>the Frontend Developer Career Path</strong> at
             <a
-              class="accent-links hvr-underline-from-left"
+              class="dark-links hvr-underline-from-left"
               href="https://scrimba.com/learn/frontend"
               target="_blank"
               rel="noopener noreferrer"
@@ -102,7 +101,7 @@
             >
             and the <strong>Full Stack JavaScript Path</strong> with
             <a
-              class="accent-links hvr-underline-from-left"
+              class="dark-links hvr-underline-from-left"
               href="https://www.theodinproject.com/paths/full-stack-javascript"
               target="_blank"
               rel="noopener noreferrer"
@@ -118,7 +117,7 @@
       <section class="projects" id="projects">
         <div class="container">
           <div class="project-tile">
-            <h2>Projects</h2>
+            <h2 class="section-title">Projects</h2>
             <p
               class="codepen"
               data-height="265"
@@ -263,13 +262,37 @@
     <footer>
       <div class="container">
         <p>
+          Designed & Built by Ana Moros<a
+            href="https://github.com/AnaMoros/portfolio"
+            target="_blank"
+            ><svg class="icon icon-footer" aria-labelledby="github-portfolio">
+              <title id="github-portfolio" lang="en">Github</title>
+              <use xlink:href="/css/all.svg#github" />
+              .
+            </svg></a
+          >
+        </p>
+
+        <p class="footer-notes">
           Icons made
-          <a href="https://www.freepik.com" title="Freepik">Freepik</a> and<a
+          <a
+            href="https://www.freepik.com"
+            title="Freepik"
+            class="hvr-underline-from-left"
+            >Freepik</a
+          >
+          and
+          <a
             href="https://www.flaticon.com/authors/pixel-perfect"
             title="Pixel perfect"
+            class="hvr-underline-from-left"
             >Pixel perfect</a
           >
-          from<a href="https://www.flaticon.com/" title="Flaticon"
+          from
+          <a
+            href="https://www.flaticon.com/"
+            title="Flaticon"
+            class="hvr-underline-from-left"
             >www.flaticon.com</a
           >
         </p>
