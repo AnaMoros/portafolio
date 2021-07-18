@@ -10,6 +10,10 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.5.0/font/bootstrap-icons.css"
+    />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -24,11 +28,9 @@
         <button
           class="btn btn-mobile bg-accent hvr-setup to-right"
           id="close-menu"
+          aria-label="close menu"
         >
-          <svg class="icon" aria-labelledby="close-menu-title">
-            <title id="close-menu-titke" lang="en">Close menu</title>
-            <use xlink:href="/css/all.svg#right-arrow-angle" />
-          </svg>
+          <i class="bi bi-x-lg" aria-hidden="true"></i>
         </button>
         <ul class="links-wrapper">
           <li class="nav-links hvr-underline-from-left">
@@ -43,28 +45,28 @@
           <li class="nav-links hvr-underline-from-left">
             <a
               href="https://github.com/AnaMoros"
-              id="profile-link"
               target="_blank"
-              ><svg class="icon icon-nav">
-                <use xlink:href="/css/all.svg#github" />
-              </svg>
-              Github</a
+              rel="noopener noreferrer"
+              id="profile-link"
+              ><i class="bi bi-github" aria-hidden="true"></i> GitHub</a
             >
           </li>
           <li class="nav-links hvr-underline-from-left">
-            <a href="https://twitter.com/mm_AnaMoros" target="_blank"
-              ><svg class="icon icon-nav">
-                <use xlink:href="/css/all.svg#twitter" />
-              </svg>
-              Twitter</a
+            <a
+              href="https://twitter.com/mm_AnaMoros"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="profile-link"
+              ><i class="bi bi-twitter" aria-hidden="true"></i> Twitter</a
             >
           </li>
           <li class="nav-links hvr-underline-from-left">
-            <a href="https://www.linkedin.com/in/anamoros/" target="_blank"
-              ><svg class="icon icon-nav">
-                <use xlink:href="/css/all.svg#linkedin" />
-              </svg>
-              LinkedIn</a
+            <a
+              href="https://www.linkedin.com/in/anamoros/"
+              target="_blank"
+              rel="noopener noreferrer"
+              id="profile-link"
+              ><i class="bi bi-linkedin" aria-hidden="true"></i> LinkedIn</a
             >
           </li>
         </ul>
@@ -74,11 +76,9 @@
         class="btn btn-mobile bg-dark hvr-setup to-left"
         id="open-menu"
         tabindex="0"
+        aria-label="open main menu"
       >
-        <svg class="icon" aria-labelledby="open-menu-title">
-          <title id="open-menu-title" lang="en">Open menu</title>
-          <use xlink:href="/css/all.svg#left-arrow-line-symbol" />
-        </svg>
+        <i class="bi bi-three-dots-vertical" aria-hidden="true"></i>
       </button>
     </nav>
 
@@ -146,19 +146,22 @@
                       href="http://anaweatherproject.netlify.app/"
                       target="_blank"
                       rel="noopener noreferrer"
-                      ><svg class="icon2 icon-nav">
-                        <use xlink:href="/css/all.svg#external-link" />
-                        .
-                      </svg></a
-                    >
+                      aria-label="Link to weather app website"
+                      ><i
+                        class="bi bi-box-arrow-up-right"
+                        role="img"
+                        aria-hidden="true"
+                      ></i
+                    ></a>
                   </li>
                   <li>
-                    <a href="https://github.com/AnaMoros" target="_blank"
-                      ><svg class="icon2 icon-nav">
-                        <use xlink:href="/css/all.svg#github" />
-                        .
-                      </svg></a
-                    >
+                    <a
+                      href="https://github.com/AnaMoros/Weather-Project"
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      aria-label="Link to weather app GitHub repository"
+                      ><i class="bi-github" role="img" aria-hidden="true"></i
+                    ></a>
                   </li>
                 </ul>
               </div>
@@ -170,39 +173,15 @@
     </main>
     <footer>
       <div class="container">
+        <p>Designed & Built by Ana Moros</p>
         <p>
-          Designed & Built by Ana Moros<a
+          <a
             href="https://github.com/AnaMoros/portfolio"
             target="_blank"
-            ><svg class="icon icon-footer" aria-labelledby="github-portfolio">
-              <title id="github-portfolio" lang="en">Github</title>
-              <use xlink:href="/css/all.svg#github" />
-              .
-            </svg></a
-          >
-        </p>
-        <p class="footer-notes">
-          Icons made
-          <a
-            href="https://www.freepik.com"
-            title="Freepik"
-            class="hvr-underline-from-left"
-            >Freepik</a
-          >
-          and
-          <a
-            href="https://www.flaticon.com/authors/pixel-perfect"
-            title="Pixel perfect"
-            class="hvr-underline-from-left"
-            >Pixel perfect</a
-          >
-          from
-          <a
-            href="https://www.flaticon.com/"
-            title="Flaticon"
-            class="hvr-underline-from-left"
-            >www.flaticon.com</a
-          >
+            rel="noopener noreferrer"
+            aria-label="Link to GitHub portfolio"
+            ><i class="bi bi-github" role="img" aria-hidden="true"></i
+          ></a>
         </p>
       </div>
       <!-- close cointainer -->
