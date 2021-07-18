@@ -10,7 +10,6 @@
       href="https://fonts.googleapis.com/css2?family=Raleway:wght@300;600;900&family=Shadows+Into+Light&display=swap"
       rel="stylesheet"
     />
-    <link rel="stylesheet" href="normalize.css" />
     <link rel="stylesheet" href="css/style.css" />
   </head>
   <body>
@@ -87,7 +86,10 @@
       <section class="welcome" id="welcome-section">
         <div class="container">
           <h1>Hi, I'm Ana</h1>
-          <h2 class="hero-animation">A frontend developer.</h2>
+          <h2>
+            <div class="hero-animation">A frontend</div>
+            <div class="hero-animation">developer.</div>
+          </h2>
           <p>
             Former English language teacher, part-time adventurer, now a UK
             based
@@ -117,23 +119,29 @@
       </section>
       <section class="projects" id="projects">
         <div class="container">
-          <div class="project-tile">
-            <h2 class="section-title">Projects</h2>
-            <div class="project-tile grid">
-              <figure class="effect-zoe">
-                <img
-                  src="images/weatherapp-pic.png"
-                  alt="picture of weather app"
-                />
-                <figcaption>
-                  <h3>Weather <span>App</span></h3>
-                  <p class="description">
-                    Lorem ipsum dolor sit amet consectetur, adipisicing elit.
-                    Culpa, neque obcaecati. Esse voluptas dignissimos in fuga
-                    consectetur, vitae hic minus, reprehenderit, alias
-                    architecto minima sunt quia excepturi impedit et distinctio?
-                  </p>
-                  <p class="icon-links">
+          <h2 class="section-title">Projects</h2>
+          <figure class="tile-project">
+            <img
+              src="images/weatherapp-pic.png"
+              alt="picture of weather app"
+              class="tile-img"
+            />
+            <figcaption>
+              <div class="tile-info">
+                <h3 class="tile-title">Weather <span>App</span></h3>
+                <p class="description">
+                  Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+                  Culpa, neque obcaecati. Esse voluptas dignissimos in fuga
+                  consectetur, vitae hic minus, reprehenderit, alias architecto
+                  minima sunt quia excepturi impedit et distinctio?
+                </p>
+                <ul class="tile-list tile-languages">
+                  <li>HTML</li>
+                  <li>CSS</li>
+                  <li>JavaScript</li>
+                </ul>
+                <ul class="tile-list tile-links">
+                  <li>
                     <a
                       href="http://anaweatherproject.netlify.app/"
                       target="_blank"
@@ -143,151 +151,19 @@
                         .
                       </svg></a
                     >
+                  </li>
+                  <li>
                     <a href="https://github.com/AnaMoros" target="_blank"
                       ><svg class="icon2 icon-nav">
                         <use xlink:href="/css/all.svg#github" />
                         .
                       </svg></a
                     >
-                  </p>
-                </figcaption>
-              </figure>
-              <ul>
-                <li>HTML</li>
-                <li>CSS</li>
-                <li>JavaScript</li>
-              </ul>
-            </div>
-            <!-- close project div -->
-            <p
-              class="codepen"
-              data-height="265"
-              data-theme-id="dark"
-              data-default-tab="result"
-              data-user="anamoros"
-              data-slug-hash="GRWmmKO"
-              data-preview="true"
-              style="
-                height: 265px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid;
-                margin: 1em 0;
-                padding: 1em;
-              "
-              data-pen-title="GRWmmKO"
-            >
-              <span
-                >See the Pen
-                <a href="https://codepen.io/anamoros/pen/GRWmmKO"> GRWmmKO</a>
-                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-                <a href="https://codepen.io">CodePen</a>.</span
-              >
-            </p>
-            <script
-              async
-              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-            ></script>
-            <h3>
-              <a
-                href="https://codepen.io/anamoros/pen/GRWmmKO"
-                target="_blank"
-                rel="noopener noreferrer"
-                >Survey Form</a
-              >
-            </h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-              vitae hic minus, reprehenderit, alias architecto minima sunt quia
-              excepturi impedit et distinctio?
-            </p>
-          </div>
-          <!-- close project tile -->
-          <div class="project-tile">
-            <p
-              class="codepen"
-              data-height="265"
-              data-theme-id="dark"
-              data-default-tab="result"
-              data-user="anamoros"
-              data-slug-hash="VwppoqP"
-              data-preview="true"
-              style="
-                height: 265px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid;
-                margin: 1em 0;
-                padding: 1em;
-              "
-              data-pen-title="VwppoqP"
-            >
-              <span
-                >See the Pen
-                <a href="https://codepen.io/anamoros/pen/VwppoqP"> VwppoqP</a>
-                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-                <a href="https://codepen.io">CodePen</a>.</span
-              >
-            </p>
-            <script
-              async
-              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-            ></script>
-            <h3>Project Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-              vitae hic minus, reprehenderit, alias architecto minima sunt quia
-              excepturi impedit et distinctio?
-            </p>
-          </div>
-          <!-- close project tile -->
-          <div class="project-tile">
-            <p
-              class="codepen"
-              data-height="265"
-              data-theme-id="dark"
-              data-default-tab="result"
-              data-user="anamoros"
-              data-slug-hash="abJwbXj"
-              data-preview="true"
-              style="
-                height: 265px;
-                box-sizing: border-box;
-                display: flex;
-                align-items: center;
-                justify-content: center;
-                border: 2px solid;
-                margin: 1em 0;
-                padding: 1em;
-              "
-              data-pen-title="abJwbXj"
-            >
-              <span
-                >See the Pen
-                <a href="https://codepen.io/anamoros/pen/abJwbXj"> abJwbXj</a>
-                by Ana (<a href="https://codepen.io/anamoros">@anamoros</a>) on
-                <a href="https://codepen.io">CodePen</a>.</span
-              >
-            </p>
-            <script
-              async
-              src="https://cpwebassets.codepen.io/assets/embed/ei.js"
-            ></script>
-            <h3>Project Title</h3>
-            <p>
-              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Culpa,
-              neque obcaecati. Esse voluptas dignissimos in fuga consectetur,
-              vitae hic minus, reprehenderit, alias architecto minima sunt quia
-              excepturi impedit et distinctio?
-            </p>
-          </div>
-          <!-- close project tile -->
+                  </li>
+                </ul>
+              </div>
+            </figcaption>
+          </figure>
         </div>
         <!-- close cointainer -->
       </section>
@@ -305,7 +181,6 @@
             </svg></a
           >
         </p>
-
         <p class="footer-notes">
           Icons made
           <a

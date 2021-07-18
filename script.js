@@ -41,8 +41,10 @@ function closeNav() {
 }
 
 // Wrap every letter in a span
-const textWrapper = document.querySelector(".hero-animation");
-textWrapper.innerHTML = textWrapper.textContent.replace(
-  /\S/g,
-  "<span class='letter'>$&</span>"
-);
+const textWrapper = document.querySelectorAll(".hero-animation");
+for (let h2 of textWrapper) {
+  h2.innerHTML = h2.textContent.replace(
+    /\S/g,
+    "<span class='letter'>$&</span>"
+  );
+}
