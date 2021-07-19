@@ -1,6 +1,6 @@
 "use strict";
 // open and close the side navigation when resizing the device
-const navMinWidth = window.matchMedia("(min-width: 775px)");
+const navMinWidth = window.matchMedia("(min-width: 768px)");
 const openMenuBtn = document.getElementById("open-menu");
 const closeMenuBtn = document.getElementById("close-menu");
 const mainNav = document.getElementById("main-nav");
@@ -26,12 +26,12 @@ openMenuBtn.addEventListener("click", () => {
 
 function handleDeviceChange(size) {
   if (size.matches) {
-    mainNav.classList.add("visible", "topnav");
+    mainNav.classList.add("visible");
     mainNav.classList.remove("ani-open-from-left", "sidenav");
     overlay.classList.remove("overlay-open");
   } else {
     mainNav.classList.add("no-ani", "sidenav");
-    mainNav.classList.remove("visible", "topnav");
+    mainNav.classList.remove("visible");
   }
 }
 

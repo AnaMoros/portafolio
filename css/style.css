@@ -253,29 +253,6 @@ nav {
   background-color: var(--light);
 }
 
-@media (min-width: 775px) {
-  /* if you change the min-width change the size in javascript media query to match  */
-  .btn-mobile {
-    display: none;
-  }
-  .topnav {
-    /* use when styling on bigger screens, if not needed please delete from here and js file */
-  }
-  .visible {
-    visibility: visible;
-  }
-  button.hvr-setup {
-    display: none;
-  }
-
-  .links-wrapper {
-    display: flex;
-  }
-  .nav-links {
-    margin-right: 2.3em;
-    margin-bottom: 0;
-  }
-}
 /* ==========
  Project tiles
  =========== */
@@ -476,5 +453,29 @@ figcaption {
   100% {
     transform: translate(0) scale(1) rotate(0deg);
     opacity: 1;
+  }
+}
+
+@media (min-width: 768px) {
+  /* if you change the min-width change the size in javascript media query to match  */
+  .btn-mobile {
+    display: none;
+  }
+  .visible {
+    visibility: visible;
+  }
+  button.hvr-setup {
+    display: none;
+  }
+  .links-wrapper {
+    display: flex;
+  }
+  .nav-links {
+    margin-right: 0;
+    margin-bottom: 0;
+    margin-left: 2em;
+  }
+  .hero-animation {
+    display: inline-block;
   }
 }
