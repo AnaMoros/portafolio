@@ -11,7 +11,7 @@
   --font-sans-main: "Raleway", "Arial Black", Tahoma, Arial, Helvetica,
     sans-serif;
   --font-accent: "Shadows Into Light", Tahoma, Arial, Helvetica, sans-serif;
-  --fn-nav-s: 1.2rem;
+  --fn-navbar: 1.2rem;
   --fn-xs: clamp(0.6rem, 0.8vw, 1rem);
   --fn-m: clamp(1rem, 2vw, 1.2rem);
   --fn-l: clamp(1.5rem, 7vw, 2rem);
@@ -46,18 +46,13 @@ img {
   transition: none !important;
 }
 
-.icon {
-  display: block;
-  fill: var(--light);
-}
-
 /* ===========
   Typography
 ===========*/
 
 h1 {
   margin: 0;
-  margin-top: calc(var(--fn-nav-s) * 6);
+  margin-top: calc(var(--fn-navbar) * 6);
   font-size: clamp(24px, 4vw, 48px);
   font-family: var(--font-accent);
 }
@@ -130,11 +125,6 @@ footer {
 .welcome .container {
   align-items: flex-start;
 }
-.icon-footer {
-  margin: 0 auto;
-  width: var(--fn-nav-s);
-  height: var(--fn-nav-s);
-}
 /* ===========
   Buttons
 ===========*/
@@ -150,25 +140,25 @@ footer {
   border-radius: 4px;
   padding: 1em;
   background-color: inherit;
-}
-.icon {
-  -webkit-transition: fill 0.3s;
-  transition: fill 0.3s;
+  color: var(--light);
+  font-size: var(--fn-navbar);
+  -webkit-transition: color 0.3s;
+  transition: color 0.3s;
 }
 
-.bg-dark:hover .icon,
-.bg-dark:focus .icon,
-.bg-dark:active .icon {
-  fill: var(--dark);
+.bg-dark:hover,
+.bg-dark:focus,
+.bg-dark:active {
+  color: var(--dark);
 }
-.bg-accent:hover .icon,
-.bg-accent:focus .icon,
-.bg-accent:active .icon {
-  fill: var(--accent);
+.bg-accent:hover,
+.bg-accent:focus,
+.bg-accent:active {
+  color: var(--accent);
 }
 
 .sidenav > .btn-mobile {
-  margin: 1em auto 0.5em 2em;
+  margin: 1em auto 0.5em 1em;
 }
 
 .btn-primary {
@@ -205,14 +195,12 @@ nav {
   margin: 0.5em 0 0.5em 1em;
 }
 .logo {
-  width: calc(var(--fn-nav-s) * 4);
-  height: calc(var(--fn-nav-s) * 4);
+  display: block;
+  width: calc(var(--fn-navbar) * 4);
+  height: calc(var(--fn-navbar) * 4);
+  fill: var(--light);
 }
 
-nav button .icon {
-  width: calc(var(--fn-nav-s) * 2);
-  height: calc(var(--fn-nav-s) * 2);
-}
 .sidenav {
   visibility: hidden;
   height: 100vh;
@@ -256,20 +244,13 @@ nav button .icon {
   list-style: none;
   margin-bottom: 1.5em;
   margin-right: 1em;
-  font-size: var(--fn-nav-s);
+  font-size: var(--fn-navbar);
   letter-spacing: 1px;
   font-family: var(--font-accent);
 }
 
 .nav-links.hvr-underline-from-left::before {
   background-color: var(--light);
-}
-
-.icon-nav {
-  display: inline-block;
-  width: var(--fn-nav-s);
-  height: var(--fn-nav-s);
-  margin-right: 0.4em;
 }
 
 @media (min-width: 775px) {
@@ -347,10 +328,6 @@ figcaption {
 }
 .tile-list li {
   margin-right: 1rem;
-}
-.icon2 {
-  display: inline-block;
-  fill: var(--accent);
 }
 
 /* ===========
