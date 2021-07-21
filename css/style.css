@@ -137,6 +137,7 @@ footer {
 .projects {
   min-height: 100vh;
 }
+
 /* ===========
   Buttons
 ===========*/
@@ -168,11 +169,9 @@ footer {
 .bg-accent:active {
   color: var(--accent);
 }
-
 .sidenav > .btn-mobile {
   margin: 1em auto 0.5em 1em;
 }
-
 .btn-primary {
   background-color: var(--blue);
   padding: 0.6em 1.3em;
@@ -183,11 +182,9 @@ footer {
   font-weight: 600;
   font-size: var(--fn-m);
 }
-
 .btn-primary.hvr-setup::before {
   background: var(--accent);
 }
-
 /* ===========
   Navbar
 ===========*/
@@ -212,7 +209,6 @@ nav {
   height: calc(var(--fn-navbar) * 2.2);
   fill: var(--light);
 }
-
 .sidenav {
   visibility: hidden;
   height: 100vh;
@@ -260,7 +256,6 @@ nav {
   letter-spacing: 1px;
   font-family: var(--font-accent);
 }
-
 .nav-links.hvr-underline-from-left::before {
   background-color: var(--light);
 }
