@@ -6,7 +6,9 @@
   --accent: hsl(317, 42%, 27%);
   --accent-alpha: hsla(318, 42%, 27%, 0.85);
   --blue: hsl(196, 15%, 53%);
+  --blue-alpha: hsla(195, 15%, 53%, 0.774);
   --grey: hsl(320, 5%, 68%);
+  --grey-alpha: hsla(315, 5%, 68%, 0.733);
 
   --font-sans-main: "Raleway", "Arial Black", Tahoma, Arial, Helvetica,
     sans-serif;
@@ -27,6 +29,10 @@
   box-sizing: border-box;
 }
 
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: calc(var(--fn-navbar) * 2.4);
+}
 html,
 body {
   margin: 0;
@@ -78,12 +84,9 @@ footer {
   color: var(--light);
   text-align: center;
 }
-.footer-notes {
+footer p {
   font-size: var(--fn-xs);
   letter-spacing: 1.2px;
-}
-.footer-notes a {
-  display: inline-block;
 }
 a {
   color: inherit;
@@ -113,7 +116,7 @@ footer {
   align-items: center;
 }
 footer {
-  height: 20vh;
+  height: 15vh;
   background-color: var(--dark);
 }
 .container {
@@ -130,6 +133,9 @@ footer {
 }
 .welcome p {
   margin-bottom: 1.2em;
+}
+.projects {
+  min-height: 100vh;
 }
 /* ===========
   Buttons
@@ -288,8 +294,7 @@ figcaption {
   left: 0;
   width: 100%;
   height: 100%;
-  background: var(--dark-alpha);
-  color: var(--light);
+  background: var(--blue-alpha);
   display: flex;
   align-items: center;
 }
@@ -313,6 +318,13 @@ figcaption {
 }
 .tile-list li {
   margin-right: 1rem;
+}
+.tile-list a:hover,
+.tile-list a:active,
+.tile-list a:focus {
+  color: var(--accent);
+  /* text-shadow: 0 0 7px #fff, 0 0 10px #fff, 0 0 21px #fff, 0 0 42px #0fa,
+    0 0 82px rgb(169, 173, 172), 0 0 92px #0fa, 0 0 102px #0fa, 0 0 151px #0fa; */
 }
 
 /* ===========
@@ -467,7 +479,7 @@ figcaption {
   .hero-animation {
     display: inline-block;
   }
-  .projects {
+  .projects-wrapper {
     display: flex;
     flex-wrap: wrap;
   }
